@@ -1,57 +1,139 @@
 # 📦 Serverless Image Resizer using AWS  
-### _INT330 – Managing Cloud Solutions_  
-**CA 2 – Project**  
-**Submitted by:** Anisha Kumari  
-**Reg ID:** 12312596  
-**Section:** K23QC  
-**Roll:** 15  
+### _Managing Cloud Solutions_  
 
----
-
-## 🌈 Animated Header  
-![Cloud Banner](https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aniketmaurya/christmas-lights/master/assets/santa.gif" width="260">
+</p>
 
 ---
 
 # 🚀 Project Overview  
-This project implements a **Serverless Image Resizer Architecture** using AWS Services.  
-When a user uploads an image to Amazon S3, a Lambda function automatically resizes the image and stores the resized version into another S3 bucket — fully automated, scalable, secure, and serverless.
+This project implements a **Serverless Image Resizer Architecture** using AWS services.
+
+Whenever a user uploads an image to an S3 bucket, a Lambda function automatically resizes it and stores the optimized version in another S3 bucket — without managing any servers.
+
+The solution is:  
+✔ Serverless  
+✔ Scalable  
+✔ Cost-efficient  
+✔ Secure  
+✔ Event-driven  
 
 ---
 
 # 🎯 Objectives  
-- Fully automated image resizing pipeline  
-- Use AWS Lambda for cost-efficient serverless execution  
-- Store high-quality optimized images  
-- Ensure scalable and event-driven architecture  
-- Enforce secure access using IAM Roles & Policies  
-- Low-latency content delivery (CloudFront)
+- Automatically resize images on upload  
+- Use AWS Lambda for serverless execution  
+- Store optimized images efficiently  
+- Ensure secure access with IAM  
+- Monitor activity using CloudWatch  
+- Enable fast global delivery using CloudFront (optional)  
 
 ---
 
-# 🛠 AWS Services Used  
-| AWS Service | Purpose |
-|------------|---------|
-| **Amazon S3** | Store original & resized images |
-| **AWS Lambda** | Resize images automatically |
-| **AWS IAM** | Secure role-based permissions |
-| **Amazon CloudWatch** | Logs, metrics, alarms |
-| **Amazon CloudFront** | Optional fast image delivery |
+# 🧊 AWS Services Used  
+These icons ALWAYS load, GitHub-safe:
+
+![S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)
+![Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![IAM](https://img.shields.io/badge/AWS%20IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudWatch](https://img.shields.io/badge/Amazon%20CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white)
+![CloudFront](https://img.shields.io/badge/Amazon%20CloudFront-8C4FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
 
-# 🧩 Use Case / Scenario  
-A CMS (Content Management System) receives large, high-resolution images.  
-The website needs multiple versions — thumbnail, medium, large.  
-Instead of manually resizing, the system resizes images automatically in the cloud.
+# 🧩 Scenario  
+A website receives large high-resolution images.  
+The site needs smaller versions (thumbnail, medium, large) for fast performance.
+
+This architecture **automatically resizes images** and stores them in an optimized format.
 
 ---
 
-# 🏗 Architecture Diagram (Animated)  
-Below is the **full architecture diagram** for the project:
-
-![Architecture GIF](https://media.giphy.com/media/l0HlSNOxJB956qwfK/giphy.gif)
+# 🏗 Architecture Animation (GitHub-Safe)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Azure-Samples/media/master/media/architecture-diagrams/serverless.gif" width="550">
+</p>
 
 ---
 
-# 🧠 Complete Architecture Flow  
+# 🧠 Architecture Flow
+
+User Uploads Image
+↓
+original-images-bucket (S3)
+↓ (Trigger)
+AWS Lambda Function
+↓ (Resizes)
+resized-images-bucket (S3)
+↓
+(Optional) CloudFront for fast delivery
+
+
+---
+
+# 🛠 Full Implementation Steps  
+
+## 1️⃣ Create S3 Buckets  
+- **original-images-bucket** → upload folder  
+- **resized-images-bucket** → output folder  
+- Upload sample JPG/PNG
+
+---
+
+## 2️⃣ Create IAM Execution Role  
+Attach Policies:  
+- AmazonS3FullAccess  
+- AWSLambdaBasicExecutionRole  
+
+Add inline policy for S3 trigger permissions.
+
+---
+
+## 3️⃣ Create AWS Lambda Function  
+- Runtime: Python / Node.js  
+- Install Sharp / Pillow for image resizing  
+- Write code to:  
+  ➝ Read from S3  
+  ➝ Resize  
+  ➝ Write resized image to another bucket  
+- Assign IAM role  
+- Increase memory & timeout  
+
+---
+
+## 4️⃣ Connect S3 to Lambda  
+In Lambda → Add Trigger → S3  
+- Bucket: original-images-bucket  
+- Event: PUT  
+- Destination: resized-images-bucket  
+
+Lambda now runs automatically on image upload.
+
+---
+
+## 5️⃣ Test Full Flow  
+- Upload an image  
+- Lambda resizes automatically  
+- Check resized bucket  
+- Works for JPG/PNG  
+
+---
+
+## 6️⃣ CloudWatch Monitoring  
+- Open CloudWatch Logs  
+- View Lambda execution logs  
+- Track errors & performance  
+
+---
+
+## 7️⃣ Optional: CloudFront Setup  
+- Create CloudFront distribution  
+- Use resized bucket as origin  
+- Enables **fast global delivery** of images  
+
+---
+
+# 📸 Screenshots  
+All screenshots are available in this repo:
+
