@@ -50,7 +50,7 @@ This architecture **automatically resizes images** and stores them in an optimiz
 
 ---
 
-# 🏗 Architecture Animation (GitHub-Safe)
+# 🏗 Architecture Animation
 <p align="center">
   <img src="https://raw.githubusercontent.com/Azure-Samples/media/master/media/architecture-diagrams/serverless.gif" width="550">
 </p>
