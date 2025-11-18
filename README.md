@@ -7,29 +7,28 @@
 </p>
 
 ---
-
-# 🎨 3D Banner — Made for *Anisha Kumari*  
+ 
 <p align="center">
-  <img src="https://i.imgur.com/sHhhpbn.png" width="820px" />
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="700px">
 </p>
 
 ---
 
 # 🧊 3D AWS Icons — Tech Stack Used  
-
 <p align="center">
-  <img src="https://d1.awsstatic.com/product-marketing/ALL%20SERVICES%20Icons/S3%20icon.9e1d9f32a7f6c5d45d6c2f2efa3c7bd3a4d5907d.png" width="120" title="Amazon S3" />
+  <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" width="120" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://d1.awsstatic.com/product-marketing/Lambda/Serverless_AWSLambda_icon_64.4f3f9d33083894026fb5d3a7ed7b888d4e921d39.png" width="120" title="AWS Lambda" />
+  <img src="https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/amazon-s3.png" width="120" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://d1.awsstatic.com/product-marketing/IAM/Identity-Access-Management_IAM.7c1976a531c7d1ca8e35bdfb24d3dc0fa9e1a247.png" width="120" title="IAM" />
+  <img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/lambda-64.png" width="120" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://d1.awsstatic.com/product-marketing/CloudWatch/Cloudwatch_64.9b2a444ef98a32956543d4d6acdfb5a12ddf967e.png" width="120" title="Amazon CloudWatch" />
+  <img src="https://docs.aws.amazon.com/images/IAM/latest/UserGuide/images/iam_logo.png" width="120" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://d1.awsstatic.com/Product-Page-New/CloudFront/CloudFront-product-icon_64.b515cb62cae5d7b54073e5bb5a7ab38757dedc28.png" width="120" title="Amazon CloudFront" />
+  <img src="https://docs.aws.amazon.com/images/AmazonCloudWatch/latest/monitoring/images/cloudwatch-logo.png" width="120" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://docs.aws.amazon.com/images/AmazonCloudFront/latest/DeveloperGuide/images/cloudfront.png" width="120" />
 </p>
 
----
 
 # 🚀 Project Overview  
 This project implements a **Serverless Image Resizer Architecture** using AWS services.  
@@ -58,10 +57,9 @@ This architecture resizes images **automatically**, saving time and reducing man
 
 # 🏗 Architecture Diagram (Animated)  
 <p align="center">
-  <img src="https://media.giphy.com/media/l0HlSNOxJB956qwfK/giphy.gif" width="700px">
+  <img src="https://media.giphy.com/media/kd8rH6FbjM3VQ/giphy.gif" width="700px">
 </p>
 
----
 
 # 🧠 Architecture Flow  
 User Uploads Image → original-images-bucket (S3)
