@@ -3,31 +3,40 @@
 
 ## 🌈 Animated Cloud Banner  
 <p align="center">
-  <img src="https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif" width="700px">
-</p>
-
----
- 
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="700px">
+  <img src="https://raw.githubusercontent.com/Anishacker/assets/main/cloud-banner.gif" width="700px">
 </p>
 
 ---
 
 # 🧊 3D AWS Icons — Tech Stack Used  
 <p align="center">
-  <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" width="120" />
+
+  <img src="https://d1.awsstatic.com/r2018/h/44/logo/aws-logo-smile-1200.png" width="110"/>
+
   &nbsp;&nbsp;&nbsp;
-  <img src="https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/amazon-s3.png" width="120" />
+
+  <img src="https://d1.awsstatic.com/product-marketing/S3/optimized/card-2.png" width="110"/>
+
   &nbsp;&nbsp;&nbsp;
-  <img src="https://docs.aws.amazon.com/images/lambda/latest/dg/images/lambda-64.png" width="120" />
+
+  <img src="https://d1.awsstatic.com/product-marketing/Lambda/optimized/card-2.png" width="110"/>
+
   &nbsp;&nbsp;&nbsp;
-  <img src="https://docs.aws.amazon.com/images/IAM/latest/UserGuide/images/iam_logo.png" width="120" />
+
+  <img src="https://d1.awsstatic.com/product-marketing/IAM/optimized/card-2.png" width="110"/>
+
   &nbsp;&nbsp;&nbsp;
-  <img src="https://docs.aws.amazon.com/images/AmazonCloudWatch/latest/monitoring/images/cloudwatch-logo.png" width="120" />
+
+  <img src="https://d1.awsstatic.com/product-marketing/CloudWatch/optimized/card-2.png" width="110"/>
+
   &nbsp;&nbsp;&nbsp;
-  <img src="https://docs.aws.amazon.com/images/AmazonCloudFront/latest/DeveloperGuide/images/cloudfront.png" width="120" />
+
+  <img src="https://d1.awsstatic.com/product-marketing/CloudFront/optimized/card-2.png" width="110"/>
+
 </p>
+
+---
+
 
 
 # 🚀 Project Overview  
@@ -57,7 +66,7 @@ This architecture resizes images **automatically**, saving time and reducing man
 
 # 🏗 Architecture Diagram (Animated)  
 <p align="center">
-  <img src="https://media.giphy.com/media/kd8rH6FbjM3VQ/giphy.gif" width="700px">
+  <img src="https://media.giphy.com/media/RhEvCHkHQBdA1RnCIB/giphy.gif" width="700px">
 </p>
 
 
