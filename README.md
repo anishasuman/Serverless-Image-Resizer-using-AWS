@@ -59,15 +59,18 @@ This architecture **automatically resizes images** and stores them in an optimiz
 
 # 🧠 Architecture Flow
 
-User Uploads Image
-↓
-original-images-bucket (S3)
-↓ (Trigger)
-AWS Lambda Function
-↓ (Resizes)
-resized-images-bucket (S3)
-↓
-(Optional) CloudFront for fast delivery
+
+✨ **User Uploads Image**  
+  ⬇️  
+🪣 **S3 (Original Bucket)**  
+  ⬇️ 🚨 *Event Trigger*  
+⚡ **Lambda Function**  
+🎨 *Resizes / Optimizes Image*  
+  ⬇️  
+🪣 **S3 (Resized Bucket)**  
+  ⬇️  
+🚀 **CloudFront CDN (Optional)**  
+🌍 *Delivers images globally at high speed*
 
 
 ---
